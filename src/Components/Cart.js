@@ -32,7 +32,7 @@ const Cart = () => {
     return (
         <>
             <div className="sticky bottom-auto top-0 text-center flex flex-row-reverse">
-                <button type="button" className={`${hidden ? '' : 'hidden'} text-white  bg-black hover:bg-yellow-500 font-medium text-lg px-5 py-2.5 mr-4 mt-4 focus:outline-none focus:ring-4`} onClick={handleClick} data-drawer-placement="right" data-drawer-target="drawer-example" data-drawer-backdrop="false" data-drawer-show="drawer-example" aria-controls="drawer-example">
+                <button type="button" className={`${hidden ? '' : 'hidden'} text-white  bg-black hover:bg-yellow-500 font-medium text-lg px-3 py-2.5  focus:outline-none focus:ring-4`} onClick={handleClick} data-drawer-placement="right" data-drawer-target="drawer-example" data-drawer-backdrop="false" data-drawer-show="drawer-example" aria-controls="drawer-example">
                     Your Cart
                 </button>
             </div>

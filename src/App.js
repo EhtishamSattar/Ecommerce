@@ -1,12 +1,14 @@
 import './App.css';
 import Items from './Components/Items';
-import Cart from './Components/Cart';
 import Footer from './Components/Footer';
+import Navbar from './Components/Navbar';
+import Top from './Components/Top';
 
 function App() {
   return (
     <div>
-      <Cart />
+      <Navbar/>
+      <Top/>
       <div className='mx-10 mb-3'>
         <Items />
       </div>
