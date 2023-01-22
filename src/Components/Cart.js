@@ -5,7 +5,7 @@ import CartItem from './CartItem'
 import { useDispatch } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { actionCreators } from '../state/index'
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import ShoppingCartSharpIcon from '@mui/icons-material/ShoppingCartSharp';
 
 const Cart = () => {
     const [hidden, sethidden] = useState(true)
@@ -32,9 +32,9 @@ const Cart = () => {
    
     return (
         <>
-            <div id="cart" className={`fixed bottom-0 ${items.length==0?'d-none':''} right-0 top-auto text-center bg-yellow-500  flex flex-row-reverse mr-7 mb-7`}>
+            <div id="cart" className={`fixed bottom-0 right-0 top-auto text-center bg-yellow-500  flex flex-row-reverse mr-7 mb-7`}>
                 <button type="button" className={`${hidden ? '' : 'hidden' }  text-black bg-black hover:bg-yellow-400 font-medium text-lg px-3 py-2.5  focus:outline-none focus:ring-4`} onClick={handleClick} data-drawer-placement="right" data-drawer-target="drawer-example" data-drawer-backdrop="false" data-drawer-show="drawer-example" aria-controls="drawer-example">
-                    <ShoppingCartIcon/>
+                    Check <ShoppingCartSharpIcon/> 
                 </button>
             </div>
             <div id="drawer-example" className={`fixed flex flex-col h-screen lg:w-[450px] sm:w-screen px-4 pt-4 text-white text-base bg-gray-white dark:bg-gray-800 ${hidden ? 'hidden' : ''} overflow-y-auto top-0 bg-black`} style={{"z-index":"1000"}} tabIndex="-1" aria-labelledby="drawer-label">
