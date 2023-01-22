@@ -5,8 +5,70 @@ body{
     display: none;
 }
 
+#navbar{
+    z-index: 1;
+}
+
+#top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding:40px;
+    background-color: black;
+    z-index:0;
+
+}
+.text{
+    flex:0.6;
+    margin-right:10px;
+    
+}
+.carousel{
+    flex:0.4;
+    margin-left:40px;
+}
+
 @media only screen and (max-width: 843px) {
     #topitems{
         display: none;
     }
-  }
+}
+
+
+@media only screen and (max-width: 640px) {
+    #topContent{
+      flex-direction: column;
+    }
+    #textAboveItems{
+        font-size: xx-large;
+    }
+}
+
+@media only screen and (max-width: 788px) {
+    #top{
+        flex-direction: column;
+
+    }
+    #top > .text > .sub-content1{
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    .carousel{
+        
+        margin:40px 20px;
+        width:100%;
+
+    }
+}
+
+
+#default-carousel{
+    box-shadow: 10px 10px 20px 2px #bb812b;
+    z-index:0;
+}
+
+#cart{
+    z-index:1;
+}
+

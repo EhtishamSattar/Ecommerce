@@ -38,9 +38,8 @@ const Item = (props) => {
         </div>
 
       </div>
-      <div className="pt-10">
-
-        <button type="button" onClick={() => { addArticle(props) }} className="focus:outline-none focus:ring-4 w-full bg-black hover:bg-yellow-500 text-white font-semibold hover:text-white py-4 px-3 border border-yellow-500 hover:border-transparent ">
+      <div className="bg-black mt-10">
+        <button type="button" onClick={() => { addArticle(props) }} className="focus:outline-none focus:ring-4 w-full hover:bg-yellow-500 text-white font-semibold hover:text-white py-4 px-3 border border-yellow-500 hover:border-transparent ">
           Add to Cart
         </button>
 
