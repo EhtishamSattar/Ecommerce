@@ -29,46 +29,96 @@ body{
     margin-left:40px;
 }
 
-@media only screen and (max-width: 843px) {
-    #topitems{
-        display: none;
-    }
+#default-carousel{
+    box-shadow: 0px 0px 20px 10px #bb812b;
+    z-index:0;
+}
+
+#cart{
+    z-index:1;
 }
 
 
+/* ThreeBoxes */
+
+#threeBoxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1{
+    overflow: hidden;
+    
+}
+.box1:hover > .expand{
+    transition: .5s ease;
+    /* transform: scale(1.5); */
+    height: 120px;
+    background-color: rgb(25, 25, 89);
+}
+.box2:hover > .expand{
+    
+    transition: .5s ease;
+    /* transform: scale(1.5); */
+    height: 120px;
+    background-color: rgb(25, 25, 89);
+}
+.box3:hover > .expand{
+    transition: .5s ease;
+    /* transform: scale(1.5); */
+    height: 120px;
+    background-color: rgb(25, 25, 89);
+}
+.box1:hover > .number{
+    visibility:initial;
+    
+}
+
+
+/* media queries */
 @media only screen and (max-width: 640px) {
     #topContent{
       flex-direction: column;
     }
+   
     #textAboveItems{
-        font-size: xx-large;
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .itemImage{
+        height:200px;
+        width:200px;
+        margin:auto;
     }
 }
 
 @media only screen and (max-width: 788px) {
     #top{
         flex-direction: column;
-
     }
     #top > .text > .sub-content1{
         font-size: 40px;
         font-weight: bolder;
     }
+    #threeBoxes{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .carousel{
         
         margin:40px 20px;
         width:100%;
-
+        
     }
 }
-
-
-#default-carousel{
-    box-shadow: 10px 10px 20px 2px #bb812b;
-    z-index:0;
-}
-
-#cart{
-    z-index:1;
+@media only screen and (max-width: 843px) {
+    #topitems{
+        display: none;
+    }
 }
 

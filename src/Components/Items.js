@@ -21,7 +21,7 @@ const Items = () => {
     <>
       <div>
       
-      <p id="textAboveItems" className='text-5xl font-extrabold'>Our Best Selling Products For You</p>
+      <div id="textAboveItems" className='text-5xl font-extrabold text-center'>Our Best Selling Products For You</div>
       </div>
       <div className="bg-white">
         <div className="mx-auto max-w-4xl px-4 sm:py-24 sm:px-6 lg:max-w-7xl">

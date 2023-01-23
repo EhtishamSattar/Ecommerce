@@ -4,12 +4,13 @@ import Carousel from './Carousel'
 const Top = () => {
     return (
         <>
-            <div id="top" className='border border-red-700'>
-                <div className='text border border-neutral-900 '>
+            <div id="top" className=''>
+                <div className='text'>
                         <div className='sub-content1 lg:font-extrabold lg:text-5xl leading-tight text-white mb-6 sm:text-3xl sm:font-extrabold '>Buy What you want at the best Prices</div>
-                        <div className='sub-content2 lg:font-light lg:text-2xl text-gray-400 sm:text-xl'>this is some area to write txt about you business xt about you businessxt about you businessxt about you businessxt about you businessxt about you business</div>
+                        <div className='sub-content2 lg:font-light lg:text-2xl text-gray-400 sm:text-xl'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                        </div>
                 </div>
-                <div className='carousel border border-emerald-900 '>
+                <div className='carousel '>
                     <Carousel/>
                 </div>
             </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { useDispatch } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { actionCreators } from '../state/index'
@@ -23,7 +24,7 @@ const Item = (props) => {
       <div className="group relative">
         <div className="min-h-60 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
           {/* eslint-disable-next-line */}
-          <img src={image} className="h-full w-full object-cover object-center lg:h-full lg:w-full" />
+          <img src={image} className="itemImage h-80 w-80 object-cover object-center" />
         </div>
         <div className="mt-6">
           <div>
