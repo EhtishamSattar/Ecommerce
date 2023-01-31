@@ -1,7 +1,6 @@
 import React from 'react'
 import 'flowbite'
 import image1 from './images/pic1.jpg';
-import image2 from './images/pic2.jpg';
 import image3 from './images/pic3.jpg';
 import image4 from './images/pic4.jpg';
 import image5 from './images/pic5.jpg';
