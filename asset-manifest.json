@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/EhtishamSattar/my-store/static/css/main.123abd08.css",
+    "main.js": "/EhtishamSattar/my-store/static/js/main.5e562dc6.js",
+    "static/js/787.bd93a4b4.chunk.js": "/EhtishamSattar/my-store/static/js/787.bd93a4b4.chunk.js",
+    "static/media/pic6.jpg": "/EhtishamSattar/my-store/static/media/pic6.ea33ab7903033d07dc89.jpg",
+    "static/media/pic8.jpg": "/EhtishamSattar/my-store/static/media/pic8.c215475696e1a57598cc.jpg",
+    "static/media/box2.jpg": "/EhtishamSattar/my-store/static/media/box2.162361b8d5362d1c43bc.jpg",
+    "static/media/pic3.jpg": "/EhtishamSattar/my-store/static/media/pic3.ac3924a1b27acc2f5265.jpg",
+    "static/media/box3.jpg": "/EhtishamSattar/my-store/static/media/box3.26834131e95cf8ac0d8b.jpg",
+    "static/media/pic5.jpg": "/EhtishamSattar/my-store/static/media/pic5.eaedb25f35292b127d76.jpg",
+    "static/media/pic7.jpg": "/EhtishamSattar/my-store/static/media/pic7.752c934e94a1808a383b.jpg",
+    "static/media/pic1.jpg": "/EhtishamSattar/my-store/static/media/pic1.b9d020d5311cc29b061c.jpg",
+    "static/media/box1.jpg": "/EhtishamSattar/my-store/static/media/box1.7b434b9be6a8bdd68f1e.jpg",
+    "static/media/pic4.jpg": "/EhtishamSattar/my-store/static/media/pic4.f35caf7cc15adea19888.jpg",
+    "index.html": "/EhtishamSattar/my-store/index.html",
+    "main.123abd08.css.map": "/EhtishamSattar/my-store/static/css/main.123abd08.css.map",
+    "main.5e562dc6.js.map": "/EhtishamSattar/my-store/static/js/main.5e562dc6.js.map",
+    "787.bd93a4b4.chunk.js.map": "/EhtishamSattar/my-store/static/js/787.bd93a4b4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.123abd08.css",
+    "static/js/main.5e562dc6.js"
+  ]
+}
