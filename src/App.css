@@ -6,33 +6,43 @@ body{
 }
 
 #navbar{
-    z-index: 1;
+    z-index: 10;
 }
 
+
+#top::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 457px;
+    top:0;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), black);
+    
+
+}
 #top{
+
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding:40px;
     background-color: black;
-    z-index:0;
-
+    background-image: url(./Components/images/topSec-image.jpg);
+    background-size: cover;
+   
+    height: 410px;
+    
 }
 .text{
-    flex:0.6;
-    margin-right:10px;
-    
+    flex:0.8;
+    z-index:1;
 }
 .carousel{
     flex:0.4;
     margin-left:40px;
 }
 
-#default-carousel{
-    box-shadow: 0px 0px 20px 10px #bb812b;
-    z-index:0;
-}
+
 
 #cart{
     z-index:1;
@@ -42,6 +52,7 @@ body{
 /* ThreeBoxes */
 
 #threeBoxes{
+    background-color: black;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -109,12 +120,7 @@ body{
         justify-content: center;
         align-items: center;
     }
-    .carousel{
-        
-        margin:40px 20px;
-        width:100%;
-        
-    }
+    
 }
 @media only screen and (max-width: 843px) {
     #topitems{
@@ -122,3 +128,8 @@ body{
     }
 }
 
+#login-image{
+    background-image: url('./Components/images/login-img.png');
+    background-size: cover;
+    
+}
