@@ -2,13 +2,6 @@ import React from 'react';
 import { useState } from "react";
 
 const LoginTrial = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle login logic here
-  };
   return (
     <>
       <section id="login-image" class="bg-gray-50 dark:bg-gray-900">
