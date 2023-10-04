@@ -1,15 +1,83 @@
-body{
-    box-sizing: border-box;
+
+@font-face {
+    font-family: 'Inter Extra'; /* Name the font-family for later use */
+    src: url('./fonts/Inter-ExtraLight.ttf') format('truetype');
+    /* Add other font formats if needed, e.g., woff, woff2 */
 }
+
+@font-face {
+    font-family: 'Inter Med'; /* Name the font-family for later use */
+    src: url('./fonts/Inter-Medium.ttf') format('truetype');
+    /* Add other font formats if needed, e.g., woff, woff2 */
+}
+
+@font-face {
+    font-family: 'Inter Semibold'; /* Name the font-family for later use */
+    src: url('./fonts/Inter-SemiBold.ttf') format('truetype');
+    /* Add other font formats if needed, e.g., woff, woff2 */
+} 
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    width: 100vw; /* Set the body width to a fixed value */
+    margin: 0 auto; /* Center the content horizontally */
+    font-family: Inter Med;
+  
+    
+}
+
 #drawer-example::-webkit-scrollbar{
     display: none;
 }
 
 #navbar{
-    z-index: 10;
+    z-index: 20;
+    font-family: Inter Med;
 }
 
+.drop-down{
+    z-index: 20;
+}
 
+#textAboveItems {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    width: 290px;
+    height:70px;
+    margin: auto;
+    color: #333;
+    cursor: pointer;
+    font-family: Inter Semibold;
+
+}
+ 
+.sub-content2 , #trial-button , #footer{
+    font-family: Inter Extra;
+}
+
+.item-font , .sub-content1 , #features {
+    font-family: Inter Semibold;
+
+}
+
+  #textAboveItems::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    margin:auto;
+    height: 2px;
+    
+    background-color: #007bff; /* Change this to the desired underline color */
+    transition: width 0.2s ease-in-out;
+  }
+  
+  #textAboveItems:hover::after {
+    width: 100%;
+  }
 #top::before{
     content:"";
     position: absolute;
@@ -21,7 +89,7 @@ body{
 
 }
 #top{
-
+    z-index: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -29,7 +97,6 @@ body{
     background-color: black;
     background-image: url(./Components/images/topSec-image.jpg);
     background-size: cover;
-   
     height: 410px;
     
 }
@@ -37,58 +104,13 @@ body{
     flex:0.8;
     z-index:1;
 }
-.carousel{
-    flex:0.4;
-    margin-left:40px;
-}
-
-
 
 #cart{
-    z-index:1;
+    z-index:10;
 }
 
 
-/* ThreeBoxes */
 
-#threeBoxes{
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.box1{
-    overflow: hidden;
-    
-}
-.box1:hover > .expand{
-    transition: .5s ease;
-    /* transform: scale(1.5); */
-    height: 120px;
-    background-color: rgb(25, 25, 89);
-}
-.box2:hover > .expand{
-    
-    transition: .5s ease;
-    /* transform: scale(1.5); */
-    height: 120px;
-    background-color: rgb(25, 25, 89);
-}
-.box3:hover > .expand{
-    transition: .5s ease;
-    /* transform: scale(1.5); */
-    height: 120px;
-    background-color: rgb(25, 25, 89);
-}
-.box1:hover > .number{
-    visibility:initial;
-    
-}
-
-
-/* media queries */
 @media only screen and (max-width: 640px) {
     #topContent{
       flex-direction: column;
@@ -112,24 +134,81 @@ body{
         flex-direction: column;
     }
     #top > .text > .sub-content1{
+        text-align: center;
         font-size: 40px;
+        margin-top: 30px;
         font-weight: bolder;
     }
-    #threeBoxes{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+    
+    
     
 }
-@media only screen and (max-width: 843px) {
+@media only screen and (max-width: 699px) {
     #topitems{
         display: none;
+    }
+    .sub-content1{
+        margin-top: 65px;
+        font-size: 50px;
+        font-weight: 800;
+        text-align: center;
+    }
+    .sub-content2{
+        font-size: 20px;
+        font-weight: 200;
+        padding: 0px 40px;
+        text-align: center;
+    }
+
+    #trial-button{
+        height: 100px;
+        width:400px;
+        margin:auto;
+        padding-left: 80px;
+    }
+
+    #items{
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+    .itemImage{
+        height: 7rem;
+    }
+    #item-desc{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .sub-content1{
+        margin-top: 50px;
+        line-height: normal;
+        font-size: 70px;
+        font-weight: 500;
+        text-align: left;
+        padding-left: 20px;
+    }
+    .sub-content2{
+        
+        font-size: 30px;
+        font-weight: 200;
+        text-align: left;
+        padding-left: 20px;
+    }
+    #trial-button{
+        padding-left: 20px;
+    }
+    #top{
+        height: 430px;
+    }
+    #top::before{
+        height: 480px;
     }
 }
 
 #login-image{
     background-image: url('./Components/images/login-img.png');
-    background-size: cover;
+    background-size:cover;
     
 }
